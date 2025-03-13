@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div id="chat"></div>
+    <input id="message" type="text">
+    <button onclick="sendMessage()">Send</button><script>
+        const chatSocket = new WebSocket('ws://localhost:8000/ws/chat/');
+        chatSocket.onmessage = function(e) {
+            const data = JSON.parse(e.data);
+            document.querySelector('#chat').innerHTML += data.message + '<br>';
+        };
+        function sendMessage() {
+            const message = document.querySelector('#message').value;
+            chatSocket.send(JSON.stringify({'message': message}));
+        }
+    </script>
+    <div id="chat"></div>
+    <input id="message" type="text">
+    <button onclick="sendMessage()">Send</button>
+
+    <script>
+        const chatSocket = new WebSocket('ws://localhost:8000/ws/chat/');
+        chatSocket.onmessage = function(e) {
+            const data = JSON.parse(e.data);
+            document.querySelector('#chat').innerHTML += data.message + '<br>';
+        };
+        function sendMessage() {
+            const message = document.querySelector('#message').value;
+            chatSocket.send(JSON.stringify({'message': message}));
+        }
+    </script>
+</body>
+</html>

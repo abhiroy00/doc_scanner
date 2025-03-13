@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Details</title>
+</head>
+<body>
+    <h1>Document Details</h1>
+    
+    <h2>File Information</h2>
+    <p><strong>File Name:</strong> {{ document.file.name }}</p>
+    <p><strong>Uploaded At:</strong> {{ document.uploaded_at }}</p>
+
+    <h2>OCR Text</h2>
+    <pre>{{ document.ocr_text }}</pre>
+
+    <h2>Extracted Information (LLM Response)</h2>
+    <pre>{{ document.extracted_info }}</pre>
+
+    <a href="{% url 'upload_document' %}">Upload Another Document</a>
+</body>
+</html>

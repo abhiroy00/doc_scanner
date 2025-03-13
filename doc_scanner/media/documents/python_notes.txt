@@ -1,0 +1,29 @@
+What is Machine Learning (ML)?
+Definition: Machine learning is a branch of artificial intelligence (AI) that enables computers to learn from data and make decisions or predictions without being explicitly programmed. By using algorithms to find patterns or relationships within data, ML allows systems to improve their performance over time.
+Supervised Learning
+Definition: Supervised learning is a method where a model is trained using labeled data, meaning each training example is paired with an output label. The model learns to make predictions or decisions based on these examples.
+
+Goal: Teach the model to map inputs to desired outputs so it can make accurate predictions on unseen data.
+
+Process:
+
+Data Collection: Gather labeled data with input-output pairs.
+Training: Feed the model with labeled examples to learn patterns.
+Testing: Evaluate model performance on new, unseen data.
+Applications:
+
+Spam Detection: Classifying emails as "Spam" or "Not Spam."
+Image Classification: Identifying objects in images, like "dog" or "cat."
+Medical Diagnosis: Predicting diseases based on patient data.
+Types of Supervised Learning
+Classification:
+
+Goal: Assign data points to predefined categories or classes.
+Algorithms: K-Nearest Neighbors (KNN), Logistic Regression, Decision Trees, Support Vector Machines (SVM), and Neural Networks.
+Examples: Classifying emails as spam or not, predicting disease type.
+Regression:
+
+Goal: Predict a continuous numerical value based on input features.
+Algorithms: Linear Regression, Polynomial Regression, Regression Trees, and other variants.
+Examples: Predicting house prices, stock market trends.
+These notes outline ML’s basics and set the stage for deeper exploration into other learning types, like unsupervised and reinforcement learning. Let me know if you'd like more details!
